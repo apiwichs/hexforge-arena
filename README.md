@@ -1,4 +1,4 @@
-# Topdown 
+# Hexforge Arena
 
 Real-time 2-player fighting game on the DE1-SoC implemented in bare-metal C, with direct memory-mapped VGA rendering and no operating system or graphics libraries.
 
