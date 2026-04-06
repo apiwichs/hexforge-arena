@@ -1,6 +1,11 @@
 # Hexforge Arena
 
+> **Note:** Due to academic integrity policies and plagiarism regulations associated with this course, the full source code for this project cannot be publicly released.  
+> This repository showcases system design, implementation details, and demonstrations of the project. Please feel free to reach out if you would like to discuss the technical implementation in more detail.
+
 Real-time 2-player fighting game on the DE1-SoC implemented in bare-metal C, with direct memory-mapped VGA rendering and no operating system or graphics libraries.
+
+---
 
 ## Demo
 
@@ -52,9 +57,8 @@ Attacks are frame-accurate and active only during specific animation windows. Hi
 ### Defense
 Defense is implemented as a hold-based state that remains active while the input is pressed. This required continuous input handling and correct synchronization with animation, movement constraints, and damage logic.
 
-
 ### Parry System
-Parry is implemented as a separate timing-sensitive mechanic with a short active window. Successful parries negate and reflect incoming attacks, requiring precise coordination between state transitions, frame timing, collision detection, and attack resolution, as well as tight synchronization between player state transitions, animation timing, and collision checks.
+Parry is implemented as a separate timing-sensitive mechanic with a short active window. Successful parries negate and reflect incoming attacks, requiring precise coordination between state transitions, frame timing, collision detection, and attack resolution.
 
 <img src="./gifs/parry_gif_demo.gif" alt="Parry Demo" width="500"/>
 
@@ -74,6 +78,7 @@ A dynamic camera system tracks both players and controls rendering to the VGA di
 All scaling is performed during pixel writes to the VGA buffer without hardware acceleration, requiring careful optimization to maintain real-time performance.
 
 ---
+
 ## Example Mechanics (Visuals)
 
 ### Warrior
@@ -94,6 +99,7 @@ All scaling is performed during pixel writes to the VGA buffer without hardware 
 
 <img src="./gifs/sorceress_mechanics_gif.gif" alt="Sorceress mechanics demo" width="500"/>
 
+---
 
 ## Systems Engineering Highlights
 
